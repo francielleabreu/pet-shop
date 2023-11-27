@@ -15,4 +15,4 @@
     </ul>
 </body>
 </html>
-![image](https://github.com/francielleabreu/petshop-petlover/assets/106924001/73ce328f-a5e2-403f-a6d8-432748f13960)
+![image](https://github.com/francielleabreu/petshop-petlover/assets/106924001/27015b47-c2c5-4574-b388-a2d66fcf707b)
