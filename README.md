@@ -1,3 +1,4 @@
+![image](https://github.com/francielleabreu/petshop-petlover/assets/106924001/5e70da5e-ef19-41cc-bc78-d64db4af0eaa)
 <!DOCTYPE html>
 <html>
 <head>
