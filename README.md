@@ -8,7 +8,7 @@
     <h1>Petshop Petlover</h1>
     <p>Uma plataforma web que oferece uma experiência completa para amantes de animais de estimação. A Petlover proporciona a facilidade de compra de produtos para cães e gatos, juntamente com serviços de banho e tosa para garantir que seus amigos peludos recebam o melhor tratamento possível.</p>
     <<h2>Visite o Projeto:</h2>
-    <p>Confira o projeto em ação em: <a href="https://francielleabreu.github.io/petshop-petlover/">PEtLover</a></p>
+    <p>Confira o projeto em ação em: <a href="https://francielleabreu.github.io/petshop-petlover/">Petlover</a></p>
     <h2>Tecnoligas usadas:</h2>
     <ul>
         <li>HTML</li>
