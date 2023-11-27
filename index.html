@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Pet Shop</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" href="./style/style.css">
+      <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+      <header class="custom-header">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-6 d-flex my-4">
+                  <img src="./img/logo.png" alt="Logo" class="logo">
+                  <p class="custom-store-name align-self-end">Pet Lover</p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                        <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                    </form>
+                    <div class="text-end">
+                        <button type="button" class="btn btn-outline-light me-2">Login</button>
+                        <button type="button" class="btn btn-warning btn-sign-up">Sign-up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100" id="main-menu">
+          <div class="col-md-8 text-white d-inline-flex">
+            <nav class="navbar">
+              <p>Sobre Nós</p>
+              <p>FAQ</p>
+              <p>Contato</p>
+            </nav>
+          </div>
+          <div class="col-md-4 text-right">
+            <img src="./img/icons/04.png" alt="Icon 1">
+            <img src="./img/icons/05.png" alt="Icon 2">
+            <img src="./img/icons/06.png" alt="Icon 3">
+            <img src="./img/icons/07.png" alt="Icon 4">
+          </div>
+        </div>
+      </header>
+
+      <!-- Produtos -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">            
+        <div class="collapse navbar-collapse justify-content-md-center my-4" id="navbarsExample08">
+          <ul class="navbar-nav"> 
+            <li class="nav-item dropdown">                  
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Produtos</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Tudo para cães</a></li>
+                <li><a class="dropdown-item" href="#">Tudo para gatos</a></li>
+                <li><a class="dropdown-item" href="#">Tudo para filhotes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Banho</a></li>
+                <li><a class="dropdown-item" href="#">Tosa</a></li>
+                <li><a class="dropdown-item" href="#">Corte de Unha</a></li>
+                <li><a class="dropdown-item" href="#">Limpeza de orelhas</a></li>
+                <li><a class="dropdown-item" href="#">Outros serviços</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Cães</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ração</a></li>
+                <li><a class="dropdown-item" href="#">Comida Úmida</a></li>
+                <li><a class="dropdown-item" href="#">Petiscos e Ossos</a></li>
+                <li><a class="dropdown-item" href="#">Farmácia e Higiene</a></li>
+                <li><a class="dropdown-item" href="#">Brinquedos e Mordedores</a></li>
+                <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                <li><a class="dropdown-item" href="#">Coleira, Guia e Peitorais</a></li>
+                <li><a class="dropdown-item" href="#">Camas e Cobertores</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Gatos</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ração</a></li>
+                <li><a class="dropdown-item" href="#">Comida Úmida</a></li>
+                <li><a class="dropdown-item" href="#">Areias e Banheiros</a></li>
+                <li><a class="dropdown-item" href="#">Farmácia e Higiene</a></li>
+                <li><a class="dropdown-item" href="#">Arranhadores e Brinquedos</a></li>
+                <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                <li><a class="dropdown-item" href="#">Camas e Cobertores</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+      <!-- Carrossel -->
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <img src="./img/carroussel_1.jpg" class="d-block w-100" alt="Man and a dog"/>
+                <div class="carousel-caption">
+                  <h1>Produtos e Serviços para Cães e Gatos </h1>
+                  <p class="opacity-75">O Melhor Amigo do Seu Melhor Amigo!</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img src="./img/carroussel_2.jpg" class="d-block w-100" alt="Women and a dog"/>
+                <div class="carousel-caption">
+                  <h1>Artigos para Cães e Gatos</h1>
+                  <p class="opacity-75">Diversos produtos para cães e gatos</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img src="./img/carroussel_3.jpg" class="d-block w-100" alt="Dog and a cat"/>
+                <div class="carousel-caption">
+                  <h1>Banho e Tosa</h1>
+                  <p>Nossos serviços são adaptados para atender às necessidades específicas do seu amigo peludo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+
+        <!-- Frete gratis -->
+        <div class="banner-top container mensagens-espaco">
+          <div class="text-center bg-body-tertiary-custom p-3">
+              <h3 class="custom-h3">O Paraíso dos Amantes de Cães e Gatos</h3>
+              <p class="lead text-white">Muito Mais que Compras, Uma Experiência de Amor e Carinho</p>
+              <p class="lead text-white"><img src="./img/frete.png" alt="Ícone Frete Grátis" class="icone-frete">
+              Frete Grátis a partir de R$ 89,99</p>
+          </div>
+        </div>
+        
+        <!-- Confira produtos e serviços -->
+        <div class="background-amarelo py-5">
+          <div class="container marketing text-center">
+            <h2>Confira Nossos Produtos e Serviços</h2>
+            <div class="row mx-auto text-center">
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./img/cats_1.PNG" alt="cat" >
+                <h4 class="fw-normal">Tudo para gatos</h2>
+                <p><a class="btn btn-secondary" href="#">Veja mais</a></p>
+              </div>
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./img/dog2card.PNG" alt="cat" >
+                <h4 class="fw-normal">Tudo para cães</h2>
+                <p><a class="btn btn-secondary" href="#">Veja mais</a></p>
+              </div>  
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./img/dog3card.PNG" alt="cat" >
+                <h4 class="fw-normal">Banho e Tosa</h2>
+                <p><a class="btn btn-secondary" href="#">Veja mais</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Loja virtual -->
+        <div class="banner-top container mensagens-espaco">
+          <div class="p-4 px-5 d-flex justify-content-between align-items-center bg-body-tertiary-custom">
+            <div class="logo-esquerda">
+              <img src="./img/logo-cat.png" alt="Logo gato">
+            </div>
+            <div class="text-center">
+              <h3 class="custom-h3">Confira Nossos Produtos</h3>
+            </div>
+            <div class="logo-direita">
+              <img src="./img/logo-dog.png" alt="Logo cão">
+            </div>
+          </div>
+        </div>
+
+        <!-- Categorias favoritas -->
+        <div class="container">
+          <h5>Categorias favoritas</h5>
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="./img/loja/image 1.png" class="card-img-top imagem-mesmo-tamanho" alt="Produto 1">
+                      <div class="card-body">
+                          <h6 class="card-title text-center">Ração Úmida</h6>
+                      </div>
+                  </div>
+              </div>          
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="./img/loja/image 2.png" class="card-img-top imagem-mesmo-tamanho" alt="Produto 2">
+                      <div class="card-body">
+                        <h6 class="card-title text-center">Ração Sólida</h6>
+                      </div>
+                  </div>
+              </div>          
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="./img/loja/image 3.png" class="card-img-top imagem-mesmo-tamanho" alt="Produto 3">
+                      <div class="card-body">
+                        <h6 class="card-title text-center">Higiene Oral</h6>
+                      </div>
+                  </div>
+              </div>          
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="./img/loja/image 4.png" class="card-img-top imagem-mesmo-tamanho" alt="Produto 4">
+                      <div class="card-body">
+                        <h6 class="card-title text-center">Brinquedos</h6>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Destaque cães -->
+        <div class="container">
+          <h5>Em destaque: Tudo para Cães</h5>
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="./img/loja/image 5.png" class="card-img-top imagem-mesmo-tamanho" alt="Produto 1">
+                      <div class="card-body text-center">
+                          <p class="card-text">Ração Golden Special para Cães Adultos Sabor Frango e Carne</p>
+                          <p class="card-text h4 font-weight-bold">R$ 39,49</p>
+                      </div>
+                  </div>
+              </div>        
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="./img/loja/image 6.png" class="card-img-top imagem-mesmo-tamanho" alt="Produto 2">
+                      <div class="card-body text-center">
+                        <p class="card-text">Refeição Natural Zee.Dog Kitchen para Cães Adultos Sabor Carne</p>
+                        <p class="card-text h4 font-weight-bold">R$ 69,99</p>
+                      </div>
+                  </div>
+              </div>        
+              <div class="col-md-3">
+                  <div class="card text-center">
+                      <img src="./img/loja/image 7.png" class="card-img-top imagem-mesmo-tamanho" alt="Produto 3">
+                      <div class="card-body">
+                        <p class="card-text">Brinquedo Líder Pet Bola Cravo para Cães - Cores Sortidas</p>
+                        <p class="card-text h4 font-weight-bold">R$ 14,99</p>
+                      </div>
+                  </div>
+              </div>        
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="./img/loja/image 8.png" class="card-img-top imagem-mesmo-tamanho" alt="Produto 4">
+                      <div class="card-body text-center">
+                        <p class="card-text">Petisco Pedigree Dentastix Cuidado Oral Para Cães Adultos Raças Grandes 7 Unidades</p>
+                        <p class="card-text h4 font-weight-bold">R$ 18,49</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Destaque gatos -->
+        <div class="container">
+          <h5>Em destaque: Tudo para Gatos</h5>
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="./img/loja/image 9.png" class="card-img-top imagem-mesmo-tamanho" alt="Produto 1">
+                      <div class="card-body text-center">
+                        <p class="card-text">Refeição Natural Zee.Dog Kitchen para Cães Adultos Sabor Carne</p></p>
+                        <p class="card-text h4 font-weight-bold">R$ 7,99</p>
+                      </div>
+                  </div>
+              </div>        
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="./img/loja/image 10.png" class="card-img-top imagem-mesmo-tamanho" alt="Produto 2">
+                      <div class="card-body text-center">
+                        <p class="card-text">Intersand Odourlock Areia Ultra-Aglomerante Sem Cheiro</p>
+                        <p class="card-text h4 font-weight-bold">R$ 89,90</p>
+                      </div>
+                  </div>
+              </div>        
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="./img/loja/image 11.png" class="card-img-top imagem-mesmo-tamanho" alt="Produto 3">
+                      <div class="card-body text-center">
+                        <p class="card-text">Brinquedo Líder Pet Bola Cravo para Cães - Cores Sortidas</p>
+                        <p class="card-text h4 font-weight-bold">R$ 49,90</p>
+                      </div>
+                  </div>
+              </div>        
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="./img/loja/image 12.png" class="card-img-top imagem-mesmo-tamanho" alt="Produto 4">
+                      <div class="card-body text-center">
+                        <p class="card-text">Ração GranPlus para Gatos Adultos Castrados sabor Carne e Arroz</p>
+                        <p class="card-text h4 font-weight-bold">R$ 59,90</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Banho e Tosa -->
+        
+        <div class="banner-top container mensagens-espaco">
+          <div class="p-4 px-5 d-flex justify-content-between align-items-center bg-body-tertiary-custom">
+            <div class="logo-esquerda">
+              <img src="./img/logo-cat.png" alt="Logo gato">
+            </div>
+            <div class="text-center">
+              <h3 class="custom-h3">Pet Lover Banho e Tosa</h3>
+            </div>
+            <div class="logo-direita">
+              <img src="./img/logo-dog.png" alt="Logo cão">
+            </div>
+          </div>
+        </div>
+
+        <div class="py-5 background-amarelo">
+          <div class="container">
+            <div>
+              <h5 class="text-center">Confira Nossos Serviços</h5>
+              <div class="text-center">
+                <img src="./img/banho_tosa1_.PNG" class="rounded" alt="agendamento">
+              </div>
+              <div>
+                <h5 class="text-center">A melhor opção para cuidar do seu animal de estimação</h5>
+                <div class="text-center">
+                  <img src="./img/banho_tosa2_.PNG" class="rounded" alt="agendamento">
+                </div>
+              </div>
+      
+            <!-- Agendamento -->
+            <div class="banner-agendamento position-relative my-5" style="mix-blend-mode: darken;">
+              <div class="text-center">
+                  <img src="./img/agendamento.PNG" class="rounded" alt="agendamento">
+                  <button class="btn btn-primary btn-overlay" id="quero-agendar-button">Quero Agendar</button>
+                  <div class="icon-container">
+                    <img src="./img/icons/01.png" alt="Ícone 1">
+                    <img src="./img/icons/02.png" alt="Ícone 2">
+                    <img src="./img/icons/03.png" alt="Ícone 3">
+                </div>
+              </div>
+            </div>   
+
+          <div class="hidden centralizada" id="modal-form">
+            <form>
+              <h5>Formulário de Cadastro do Pet</h5>
+              <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Nome do Pet:</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Raça:</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                </div>
+              </form>
+              <fieldset class="form-group">
+                <div class="row">
+                  <legend class="col-form-label col-sm-6 pt-0">Tipo de Porte:</legend>
+                  <div class="col-sm-6">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                      <label class="form-check-label" for="gridRadios1">
+                        Pequeno
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Médio
+                      </label>
+                    </div>
+                    <div class="form-check disabled">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                      <label class="form-check-label" for="gridRadios3">
+                        Grande
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <form class="form-inline">
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Idade:</label>
+                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Menos de 1 ano</option>
+                  <option value="1">2 a 3 anos</option>
+                  <option value="2">4 a 8 anos</option>
+                  <option value="3">Mais de 9 anos</option>
+                </select>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Temperamento:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <h5>Dados para agendamento</h5>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Nome:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">E-mail:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" class="form-control" id="telefone" pattern="[0-9]{11}" placeholder="Se possível, telefone com Whatsapp" required>
+                <small id="telefoneHelp" class="form-text text-muted">Apenas números</small>
+              </div>
+              <div class="form-group">
+                <label for="servicos">Serviços de Agendamento:</label><br>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="banho" value="banho">
+                  <label class="form-check-label" for="banho">Banho</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="tosa" value="tosa">
+                  <label class="form-check-label" for="tosa">Tosa</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="corteUnha" value="corteUnha">
+                  <label class="form-check-label" for="corteUnha">Corte de Unha</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="limpezaOrelhas" value="limpezaOrelhas">
+                  <label class="form-check-label" for="limpezaOrelhas">Limpeza de Orelhas</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="outroServico" value="outroServico">
+                  <label class="form-check-label" for="outroServico">Outro Serviço (descreva na observação)</label>
+                </div>
+                <div class="form-group">
+                  <label for="dataServico">Data do Serviço:</label>
+                  <input type="date" class="form-control" id="dataServico" placeholder="Escolha a data" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Observação (opcional):</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary my-3" id="btn-agendar-agora">Agendar agora</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        
+        <!-- Blog -->
+        <div id="blog-posts"class="container my-5">
+          <div class="logo-blog">
+            <img src="./img/logo.png" alt="logo pet lover">
+            </div>                
+              <h2>Confira os posts do nosso Blog Pet Lover</h2>
+            </div>
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./img/blog1.jpg" class="bd-placeholder-img card-img-top" alt="cato tomando banho" width="100%" height="225">
+                    <div class="card-body">
+                      <p class="card-text">Os gatos podem tomar banho? Veja dicas e cuidados para o seu felino</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Ler mais</button>
+                          </div>
+                          <small class="text-body-secondary">Postado há 2 meses</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm h-100">
+                      <img src="./img/blog2.PNG" class="bd-placeholder-img card-img-top" alt="cato tomando banho" width="100%" height="225">
+                      <div class="card-body">
+                        <p class="card-text">Benefícios do banho em Pet Shop e como escolher a melhor opção</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Ler mais</button>
+                          </div>
+                          <small class="text-body-secondary">Postado há 1 mês</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm h-100">
+                      <img src="./img/blog_3.PNG" class="bd-placeholder-img card-img-top" alt="cato tomando banho" width="100%" height="225">
+                      <div class="card-body">
+                        <p class="card-text">Tudo o que você precisa saber sobre higiene oral do seu pet</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Ler mais</button>
+                          </div>
+                          <small class="text-body-secondary">Postado há 2 dias</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
+        
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <footer class="py-5">
+            <div class="row">
+              <div class="col-6 col-md-4 mb-3">
+                <h5>Informações de Contato</h5>
+                <h6>Endereço: Av. Brasil, Rio de Janeiro - RJ, Brasil, CEP: 20940-070</h6>
+                <h6>Whatsapp: 021 982415787</h6>
+                <h6>E-mail: contato@petlover.com</h6>
+              </div>
+              <div class="col-6 col-md-7 offset-md-1 mb-3">
+                <form class="news-letter">
+                  <h5>Se inscreva na nossa newsletter</h5>
+                  <p>Receba promoções e novidades de produtos</p>
+                  <div class="d-flex w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Escreva seu e-mail aqui</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Escreva seu e-mail aqui">
+                    <button class="btn btn-primary" type="button">Se inscrever</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+              <p>&copy; 2023, Desenvolvido por Francielle Abreu.</p>
+            </div>
+          </footer>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
